@@ -30,12 +30,12 @@ protocol MVVM_View {
     func bindViewModel(_ vm: ViewModel)
 }
 
-/// 定义MVVM中双向绑定其中的 View -> ViewModel的接口
+/// 定义MVVM中双向绑定其中的 View -> ViewModel的接口(User Action)
 protocol MVVM_ViewModel_Interface {
     
 }
 
-/// 定义MVVM中双向绑定其中的 ViewModel -> View, 定义React回调
+/// 定义MVVM中双向绑定其中的 ViewModel -> View （定义React回调(Binding) / 方法回调 / block回调）
 protocol MVVM_ViewModel_Data_Bind {
 
 }
@@ -46,12 +46,10 @@ protocol MVVM_ViewModel {
     associatedtype Model: MVVM_Model & MVVM_Model_Interface
     
     /// model引用
-    var model: Model {get set}
-
-    init(with model: Model)
+    var model: Model? {get set}
 }
 
-/// 定义MVVM架构中Model提供给ViewModel的更新接口
+/// 定义MVVM架构中Model提供给ViewModel的更新接口（接口包含更新回掉Callback）
 protocol MVVM_Model_Interface {
     
 }
@@ -61,5 +59,3 @@ protocol MVVM_Model {
     // 存放数据 可以是组合数据，也可以是单个数据，看你设计了
     
 }
-
-

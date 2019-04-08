@@ -19,6 +19,7 @@ protocol HBModelInterface: MVVM_Model_Interface {
     func db_update()
 }
 
+
 class HBModel: NSObject, MVVM_Model {
     var name: String = ""
     var age: Int = 0

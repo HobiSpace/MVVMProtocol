@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		376CE237129D5DFBB1AD14DF /* Pods_MVVMProtocol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D5170C25B143D57D3CDB12 /* Pods_MVVMProtocol.framework */; };
+		87155753225BA5590099A789 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155752225BA5590099A789 /* Book.swift */; };
+		87155755225BA5810099A789 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155754225BA5810099A789 /* Author.swift */; };
+		8715575B225BA6730099A789 /* Publish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715575A225BA6730099A789 /* Publish.swift */; };
+		8715575D225BA6E20099A789 /* LendBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715575C225BA6E20099A789 /* LendBookModel.swift */; };
+		8715575F225BA8860099A789 /* LendBookDataSourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715575E225BA8860099A789 /* LendBookDataSourceModel.swift */; };
+		87155761225BAFAA0099A789 /* LendBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155760225BAFAA0099A789 /* LendBookViewModel.swift */; };
+		87155763225BB33D0099A789 /* LendBookDataSourceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155762225BB33D0099A789 /* LendBookDataSourceViewModel.swift */; };
 		87F0453BF67B904D40F98A64 /* Pods_MVVMProtocolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083BE75ED38AE85B07325C09 /* Pods_MVVMProtocolTests.framework */; };
 		C6329AF5224CC489003B903A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6329AF4224CC489003B903A /* AppDelegate.swift */; };
 		C6329AFA224CC489003B903A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6329AF8224CC489003B903A /* Main.storyboard */; };
@@ -15,7 +22,7 @@
 		C6329AFF224CC48A003B903A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6329AFD224CC48A003B903A /* LaunchScreen.storyboard */; };
 		C6329B0A224CC48A003B903A /* MVVMProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6329B09224CC48A003B903A /* MVVMProtocolTests.swift */; };
 		C6329B15224CC48A003B903A /* MVVMProtocolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6329B14224CC48A003B903A /* MVVMProtocolUITests.swift */; };
-		C6329B24224CC4A8003B903A /* MVVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6329B23224CC4A8003B903A /* MVVMProtocol.swift */; };
+		C6329B24224CC4A8003B903A /* MVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6329B23224CC4A8003B903A /* MVVM.swift */; };
 		C66783142256059000E9F06D /* HBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66783132256059000E9F06D /* HBModel.swift */; };
 		C6678316225605A300E9F06D /* HBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6678315225605A300E9F06D /* HBViewModel.swift */; };
 		C6678318225605B000E9F06D /* HBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6678317225605AF00E9F06D /* HBViewController.swift */; };
@@ -48,6 +55,13 @@
 		159C0A4D6C2439775CC8033B /* Pods_MVVMProtocolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMProtocolUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		174F5EF7C6629CC735BBB1A2 /* Pods-MVVMProtocolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMProtocolUITests.release.xcconfig"; path = "Target Support Files/Pods-MVVMProtocolUITests/Pods-MVVMProtocolUITests.release.xcconfig"; sourceTree = "<group>"; };
 		21E2BC96DB2CFD733B977D63 /* Pods-MVVMProtocol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMProtocol.debug.xcconfig"; path = "Target Support Files/Pods-MVVMProtocol/Pods-MVVMProtocol.debug.xcconfig"; sourceTree = "<group>"; };
+		87155752225BA5590099A789 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		87155754225BA5810099A789 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		8715575A225BA6730099A789 /* Publish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publish.swift; sourceTree = "<group>"; };
+		8715575C225BA6E20099A789 /* LendBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendBookModel.swift; sourceTree = "<group>"; };
+		8715575E225BA8860099A789 /* LendBookDataSourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendBookDataSourceModel.swift; sourceTree = "<group>"; };
+		87155760225BAFAA0099A789 /* LendBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendBookViewModel.swift; sourceTree = "<group>"; };
+		87155762225BB33D0099A789 /* LendBookDataSourceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendBookDataSourceViewModel.swift; sourceTree = "<group>"; };
 		87EAF038D4A2106FD8876E67 /* Pods-MVVMProtocol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMProtocol.release.xcconfig"; path = "Target Support Files/Pods-MVVMProtocol/Pods-MVVMProtocol.release.xcconfig"; sourceTree = "<group>"; };
 		88D5170C25B143D57D3CDB12 /* Pods_MVVMProtocol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMProtocol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EF09223D9861F08AE2D3B8 /* Pods-MVVMProtocolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMProtocolTests.release.xcconfig"; path = "Target Support Files/Pods-MVVMProtocolTests/Pods-MVVMProtocolTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -64,7 +78,7 @@
 		C6329B10224CC48A003B903A /* MVVMProtocolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMProtocolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6329B14224CC48A003B903A /* MVVMProtocolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMProtocolUITests.swift; sourceTree = "<group>"; };
 		C6329B16224CC48A003B903A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6329B23224CC4A8003B903A /* MVVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMProtocol.swift; sourceTree = "<group>"; };
+		C6329B23224CC4A8003B903A /* MVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM.swift; sourceTree = "<group>"; };
 		C66783132256059000E9F06D /* HBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBModel.swift; sourceTree = "<group>"; };
 		C6678315225605A300E9F06D /* HBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBViewModel.swift; sourceTree = "<group>"; };
 		C6678317225605AF00E9F06D /* HBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBViewController.swift; sourceTree = "<group>"; };
@@ -113,8 +127,43 @@
 				BF5AB29EA2DEEF5038E8BCE0 /* Pods-MVVMProtocolUITests.debug.xcconfig */,
 				174F5EF7C6629CC735BBB1A2 /* Pods-MVVMProtocolUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		87155751225BA5490099A789 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				87155752225BA5590099A789 /* Book.swift */,
+				87155754225BA5810099A789 /* Author.swift */,
+				8715575A225BA6730099A789 /* Publish.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		87155756225BA5C50099A789 /* LendBook */ = {
+			isa = PBXGroup;
+			children = (
+				C6678322225869B700E9F06D /* Model */,
+				C6678323225869CC00E9F06D /* ViewModel */,
+				C6678324225869D600E9F06D /* Controller */,
+				C6678325225869DD00E9F06D /* View */,
+			);
+			path = LendBook;
+			sourceTree = "<group>";
+		};
+		87155757225BA5DA0099A789 /* ReadBook */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReadBook;
+			sourceTree = "<group>";
+		};
+		87155758225BA5EC0099A789 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				87155751225BA5490099A789 /* Protocol */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		C6329AE8224CC489003B903A = {
@@ -174,7 +223,7 @@
 		C6329B22224CC491003B903A /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				C6329B23224CC4A8003B903A /* MVVMProtocol.swift */,
+				C6329B23224CC4A8003B903A /* MVVM.swift */,
 				C667831F225637AF00E9F06D /* React.swift */,
 			);
 			path = MVVM;
@@ -183,10 +232,9 @@
 		C66783122256058000E9F06D /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				C6678325225869DD00E9F06D /* View */,
-				C6678324225869D600E9F06D /* Controller */,
-				C6678323225869CC00E9F06D /* ViewModel */,
-				C6678322225869B700E9F06D /* Model */,
+				87155758225BA5EC0099A789 /* Common */,
+				87155757225BA5DA0099A789 /* ReadBook */,
+				87155756225BA5C50099A789 /* LendBook */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -196,6 +244,8 @@
 			children = (
 				C66783132256059000E9F06D /* HBModel.swift */,
 				C667832922586A2600E9F06D /* HBModelArray.swift */,
+				8715575C225BA6E20099A789 /* LendBookModel.swift */,
+				8715575E225BA8860099A789 /* LendBookDataSourceModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +255,8 @@
 			children = (
 				C6678315225605A300E9F06D /* HBViewModel.swift */,
 				C667832722586A0200E9F06D /* HBViewModelArray.swift */,
+				87155760225BAFAA0099A789 /* LendBookViewModel.swift */,
+				87155762225BB33D0099A789 /* LendBookDataSourceViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -438,15 +490,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6329B24224CC4A8003B903A /* MVVMProtocol.swift in Sources */,
+				8715575D225BA6E20099A789 /* LendBookModel.swift in Sources */,
+				C6329B24224CC4A8003B903A /* MVVM.swift in Sources */,
 				C6678318225605B000E9F06D /* HBViewController.swift in Sources */,
+				87155763225BB33D0099A789 /* LendBookDataSourceViewModel.swift in Sources */,
 				C667831A225605BE00E9F06D /* HBView.swift in Sources */,
+				8715575B225BA6730099A789 /* Publish.swift in Sources */,
 				C667832A22586A2600E9F06D /* HBModelArray.swift in Sources */,
 				C66783142256059000E9F06D /* HBModel.swift in Sources */,
 				C6678316225605A300E9F06D /* HBViewModel.swift in Sources */,
 				C6329AF5224CC489003B903A /* AppDelegate.swift in Sources */,
+				87155755225BA5810099A789 /* Author.swift in Sources */,
 				C667832822586A0200E9F06D /* HBViewModelArray.swift in Sources */,
+				87155753225BA5590099A789 /* Book.swift in Sources */,
+				8715575F225BA8860099A789 /* LendBookDataSourceModel.swift in Sources */,
 				C6678320225637AF00E9F06D /* React.swift in Sources */,
+				87155761225BAFAA0099A789 /* LendBookViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
