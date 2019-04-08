@@ -12,11 +12,13 @@ protocol LendBookDataSourceModelInterface: MVVM_Model_Interface {
     
 }
 
-protocol LendBookDataSourceModelProtocol: MVVM_Model {
-    var books: [LendBookModel] {get set}
+protocol LendBookDataSourceModelProtocol: MVVM_Model, Books {
+//    var books: [LendBookModel] {get set}
 }
 
 class LendBookDataSourceModel: LendBookDataSourceModelProtocol {
+    
+    typealias BookType = LendBookModel
     
     var books: [LendBookModel] = []
     

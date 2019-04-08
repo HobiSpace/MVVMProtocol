@@ -20,17 +20,22 @@ protocol LendBookModelProtocol: MVVM_Model, Book {
 
 class LendBookModel: LendBookModelProtocol {
     
+    typealias AuthorType = AuthorModel
+    
+    typealias PublishType = PublishModel
+    
+    
     var id: String
     
     var name: String
     
     var pageCount: Int
     
-    var author: Author?
+    var author: AuthorModel?
     
-    var publish: Publish?
+    var publish: PublishModel?
     
-    init(id: String, name: String, pageCount: Int, author: Author? = nil, publish: Publish? = nil) {
+    init(id: String, name: String, pageCount: Int, author: AuthorModel? = nil, publish: PublishModel? = nil) {
         self.id = id
         self.name = name
         self.pageCount = pageCount

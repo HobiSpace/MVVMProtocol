@@ -27,7 +27,7 @@ protocol MVVM_View {
     /// 绑定ViewModel，自己去设置viewModel的引用
     ///
     /// - Parameter vm: 单向viewModel绑定
-    func bindViewModel(_ vm: ViewModel)
+    func bindViewModel(_ viewModel: ViewModel)
 }
 
 /// 定义MVVM中双向绑定其中的 View -> ViewModel的接口(User Action)

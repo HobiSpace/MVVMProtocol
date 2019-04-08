@@ -15,6 +15,10 @@
 		8715575F225BA8860099A789 /* LendBookDataSourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715575E225BA8860099A789 /* LendBookDataSourceModel.swift */; };
 		87155761225BAFAA0099A789 /* LendBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155760225BAFAA0099A789 /* LendBookViewModel.swift */; };
 		87155763225BB33D0099A789 /* LendBookDataSourceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155762225BB33D0099A789 /* LendBookDataSourceViewModel.swift */; };
+		87155766225BBD220099A789 /* AuthorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155765225BBD220099A789 /* AuthorModel.swift */; };
+		87155768225BBD580099A789 /* PublishModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155767225BBD580099A789 /* PublishModel.swift */; };
+		8715576A225BBFCE0099A789 /* LendBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155769225BBFCE0099A789 /* LendBookView.swift */; };
+		8715576C225BC0230099A789 /* ReuseCellAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715576B225BC0230099A789 /* ReuseCellAble.swift */; };
 		87F0453BF67B904D40F98A64 /* Pods_MVVMProtocolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083BE75ED38AE85B07325C09 /* Pods_MVVMProtocolTests.framework */; };
 		C6329AF5224CC489003B903A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6329AF4224CC489003B903A /* AppDelegate.swift */; };
 		C6329AFA224CC489003B903A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6329AF8224CC489003B903A /* Main.storyboard */; };
@@ -62,6 +66,10 @@
 		8715575E225BA8860099A789 /* LendBookDataSourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendBookDataSourceModel.swift; sourceTree = "<group>"; };
 		87155760225BAFAA0099A789 /* LendBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendBookViewModel.swift; sourceTree = "<group>"; };
 		87155762225BB33D0099A789 /* LendBookDataSourceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendBookDataSourceViewModel.swift; sourceTree = "<group>"; };
+		87155765225BBD220099A789 /* AuthorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorModel.swift; sourceTree = "<group>"; };
+		87155767225BBD580099A789 /* PublishModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishModel.swift; sourceTree = "<group>"; };
+		87155769225BBFCE0099A789 /* LendBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendBookView.swift; sourceTree = "<group>"; };
+		8715576B225BC0230099A789 /* ReuseCellAble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseCellAble.swift; sourceTree = "<group>"; };
 		87EAF038D4A2106FD8876E67 /* Pods-MVVMProtocol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMProtocol.release.xcconfig"; path = "Target Support Files/Pods-MVVMProtocol/Pods-MVVMProtocol.release.xcconfig"; sourceTree = "<group>"; };
 		88D5170C25B143D57D3CDB12 /* Pods_MVVMProtocol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMProtocol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EF09223D9861F08AE2D3B8 /* Pods-MVVMProtocolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMProtocolTests.release.xcconfig"; path = "Target Support Files/Pods-MVVMProtocolTests/Pods-MVVMProtocolTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +144,7 @@
 				87155752225BA5590099A789 /* Book.swift */,
 				87155754225BA5810099A789 /* Author.swift */,
 				8715575A225BA6730099A789 /* Publish.swift */,
+				8715576B225BC0230099A789 /* ReuseCellAble.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -161,9 +170,19 @@
 		87155758225BA5EC0099A789 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				87155764225BBD130099A789 /* Model */,
 				87155751225BA5490099A789 /* Protocol */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		87155764225BBD130099A789 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87155765225BBD220099A789 /* AuthorModel.swift */,
+				87155767225BBD580099A789 /* PublishModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		C6329AE8224CC489003B903A = {
@@ -273,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				C6678319225605BE00E9F06D /* HBView.swift */,
+				87155769225BBFCE0099A789 /* LendBookView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -499,13 +519,17 @@
 				C667832A22586A2600E9F06D /* HBModelArray.swift in Sources */,
 				C66783142256059000E9F06D /* HBModel.swift in Sources */,
 				C6678316225605A300E9F06D /* HBViewModel.swift in Sources */,
+				87155768225BBD580099A789 /* PublishModel.swift in Sources */,
 				C6329AF5224CC489003B903A /* AppDelegate.swift in Sources */,
 				87155755225BA5810099A789 /* Author.swift in Sources */,
+				8715576A225BBFCE0099A789 /* LendBookView.swift in Sources */,
 				C667832822586A0200E9F06D /* HBViewModelArray.swift in Sources */,
 				87155753225BA5590099A789 /* Book.swift in Sources */,
 				8715575F225BA8860099A789 /* LendBookDataSourceModel.swift in Sources */,
 				C6678320225637AF00E9F06D /* React.swift in Sources */,
 				87155761225BAFAA0099A789 /* LendBookViewModel.swift in Sources */,
+				8715576C225BC0230099A789 /* ReuseCellAble.swift in Sources */,
+				87155766225BBD220099A789 /* AuthorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
