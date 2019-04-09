@@ -1,5 +1,5 @@
 //
-//  LendBookModel.swift
+//  LendBookInfoModel.swift
 //  MVVMProtocol
 //
 //  Created by hebi on 2019/4/8.
@@ -9,16 +9,16 @@
 import Foundation
 
 // 胖Model
-protocol LendBookModelInterface: MVVM_Model_Interface {
+protocol LendBookInfoModelInterface: MVVM_Model_Interface {
     func db_updateName(_ newName: String)
     func db_updatePageCount(_ newPageCount: Int, completion: ((Int) -> Void))
 }
 
-protocol LendBookModelProtocol: MVVM_Model, Book {
+protocol LendBookInfoModelProtocol: MVVM_Model, Book {
     // 定义该Model的字段 （可以由开发者自行决定是否要抽协议(建议抽)，如果考虑觉得不可能复用，可以不用抽，直接让Class实现MVVM_Model, Book）
 }
 
-class LendBookModel: LendBookModelProtocol {
+class LendBookInfoModel: LendBookInfoModelProtocol {
     
     typealias AuthorType = AuthorModel
     
@@ -45,7 +45,7 @@ class LendBookModel: LendBookModelProtocol {
     
 }
 
-extension LendBookModel: LendBookModelInterface {
+extension LendBookInfoModel: LendBookInfoModelInterface {
     func db_updatePageCount(_ newPageCount: Int, completion: ((Int) -> Void)) {
         completion(newPageCount)
     }

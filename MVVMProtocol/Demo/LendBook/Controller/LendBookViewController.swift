@@ -19,7 +19,7 @@ class LendBookViewController: UIViewController {
         return tmpTableView
     }()
     
-    var lendBookDataSourceViewModel: LendBookDataSourceViewModel = LendBookDataSourceViewModel.loadData()
+    var lendBookViewModel: LendBookViewModel = LendBookViewModel.init()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +43,7 @@ extension LendBookViewController: UITableViewDelegate {
 extension LendBookViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return lendBookDataSourceViewModel.booksVM.count
+        return lendBookViewModel.booksVM.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,7 +51,7 @@ extension LendBookViewController: UITableViewDataSource {
             return UITableViewCell.init()
         }
         
-        let vm = lendBookDataSourceViewModel.booksVM[indexPath.row]
+        let vm = lendBookViewModel.booksVM[indexPath.row]
         cell.bindViewModel(vm)
         return cell
     }
