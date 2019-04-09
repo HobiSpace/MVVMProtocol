@@ -19,7 +19,7 @@ protocol MVVM_ViewController: NSObjectProtocol {
 
 /// 定义MVVM架构中的View层
 protocol MVVM_View {
-    associatedtype ViewModel: MVVM_ViewModel & MVVM_ViewModel_Data_Bind & MVVM_ViewModel_Interface
+    associatedtype ViewModel: MVVM_ViewModel & MVVM_ViewModel_Data_Bind & MVVM_ViewModel_Interface & MVVM_ViewModel_Reformer
     
     /// viewModel引用
     var viewModel: ViewModel? {get set}
@@ -40,13 +40,16 @@ protocol MVVM_ViewModel_Data_Bind {
 
 }
 
-/// 定义ViewModel架构中的ViewModel层
-protocol MVVM_ViewModel {
-    
+protocol MVVM_ViewModel_Reformer {
     associatedtype Model: MVVM_Model & MVVM_Model_Interface
     
     /// model引用
     var model: Model? {get set}
+}
+
+/// 定义ViewModel架构中的ViewModel层
+protocol MVVM_ViewModel {
+    
 }
 
 /// 定义MVVM架构中Model提供给ViewModel的更新接口（接口包含更新回掉Callback）

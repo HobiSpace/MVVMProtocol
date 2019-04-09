@@ -11,15 +11,15 @@
 		87155753225BA5590099A789 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155752225BA5590099A789 /* Book.swift */; };
 		87155755225BA5810099A789 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155754225BA5810099A789 /* Author.swift */; };
 		8715575B225BA6730099A789 /* Publish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715575A225BA6730099A789 /* Publish.swift */; };
-		8715575D225BA6E20099A789 /* LendBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715575C225BA6E20099A789 /* LendBookModel.swift */; };
-		8715575F225BA8860099A789 /* LendBookDataSourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715575E225BA8860099A789 /* LendBookDataSourceModel.swift */; };
-		87155761225BAFAA0099A789 /* LendBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155760225BAFAA0099A789 /* LendBookViewModel.swift */; };
-		87155763225BB33D0099A789 /* LendBookDataSourceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155762225BB33D0099A789 /* LendBookDataSourceViewModel.swift */; };
+		8715575D225BA6E20099A789 /* LendBookInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715575C225BA6E20099A789 /* LendBookInfoModel.swift */; };
+		87155761225BAFAA0099A789 /* LendBookInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155760225BAFAA0099A789 /* LendBookInfoViewModel.swift */; };
 		87155766225BBD220099A789 /* AuthorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155765225BBD220099A789 /* AuthorModel.swift */; };
 		87155768225BBD580099A789 /* PublishModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155767225BBD580099A789 /* PublishModel.swift */; };
 		8715576A225BBFCE0099A789 /* LendBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155769225BBFCE0099A789 /* LendBookView.swift */; };
 		8715576C225BC0230099A789 /* ReuseCellAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715576B225BC0230099A789 /* ReuseCellAble.swift */; };
 		87F0453BF67B904D40F98A64 /* Pods_MVVMProtocolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083BE75ED38AE85B07325C09 /* Pods_MVVMProtocolTests.framework */; };
+		C61A9245225C7F160074D840 /* LendBookDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A9244225C7F160074D840 /* LendBookDataManager.swift */; };
+		C61A9247225C8A910074D840 /* LendBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A9246225C8A910074D840 /* LendBookViewModel.swift */; };
 		C61C730D225C58B700FEF231 /* LendBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C730C225C58B700FEF231 /* LendBookViewController.swift */; };
 		C6329AF5224CC489003B903A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6329AF4224CC489003B903A /* AppDelegate.swift */; };
 		C6329AFA224CC489003B903A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6329AF8224CC489003B903A /* Main.storyboard */; };
@@ -57,10 +57,8 @@
 		87155752225BA5590099A789 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		87155754225BA5810099A789 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		8715575A225BA6730099A789 /* Publish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publish.swift; sourceTree = "<group>"; };
-		8715575C225BA6E20099A789 /* LendBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendBookModel.swift; sourceTree = "<group>"; };
-		8715575E225BA8860099A789 /* LendBookDataSourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendBookDataSourceModel.swift; sourceTree = "<group>"; };
-		87155760225BAFAA0099A789 /* LendBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendBookViewModel.swift; sourceTree = "<group>"; };
-		87155762225BB33D0099A789 /* LendBookDataSourceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendBookDataSourceViewModel.swift; sourceTree = "<group>"; };
+		8715575C225BA6E20099A789 /* LendBookInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendBookInfoModel.swift; sourceTree = "<group>"; };
+		87155760225BAFAA0099A789 /* LendBookInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendBookInfoViewModel.swift; sourceTree = "<group>"; };
 		87155765225BBD220099A789 /* AuthorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorModel.swift; sourceTree = "<group>"; };
 		87155767225BBD580099A789 /* PublishModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishModel.swift; sourceTree = "<group>"; };
 		87155769225BBFCE0099A789 /* LendBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendBookView.swift; sourceTree = "<group>"; };
@@ -69,6 +67,8 @@
 		88D5170C25B143D57D3CDB12 /* Pods_MVVMProtocol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMProtocol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EF09223D9861F08AE2D3B8 /* Pods-MVVMProtocolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMProtocolTests.release.xcconfig"; path = "Target Support Files/Pods-MVVMProtocolTests/Pods-MVVMProtocolTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF5AB29EA2DEEF5038E8BCE0 /* Pods-MVVMProtocolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMProtocolUITests.debug.xcconfig"; path = "Target Support Files/Pods-MVVMProtocolUITests/Pods-MVVMProtocolUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C61A9244225C7F160074D840 /* LendBookDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendBookDataManager.swift; sourceTree = "<group>"; };
+		C61A9246225C8A910074D840 /* LendBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendBookViewModel.swift; sourceTree = "<group>"; };
 		C61C730C225C58B700FEF231 /* LendBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendBookViewController.swift; sourceTree = "<group>"; };
 		C6329AF1224CC489003B903A /* MVVMProtocol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMProtocol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6329AF4224CC489003B903A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +175,14 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		C61A9243225C7EF10074D840 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				C61A9244225C7F160074D840 /* LendBookDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
 		C6329AE8224CC489003B903A = {
 			isa = PBXGroup;
 			children = (
@@ -251,8 +259,8 @@
 		C6678322225869B700E9F06D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8715575C225BA6E20099A789 /* LendBookModel.swift */,
-				8715575E225BA8860099A789 /* LendBookDataSourceModel.swift */,
+				C61A9243225C7EF10074D840 /* DataManager */,
+				8715575C225BA6E20099A789 /* LendBookInfoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -260,8 +268,8 @@
 		C6678323225869CC00E9F06D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				87155760225BAFAA0099A789 /* LendBookViewModel.swift */,
-				87155762225BB33D0099A789 /* LendBookDataSourceViewModel.swift */,
+				87155760225BAFAA0099A789 /* LendBookInfoViewModel.swift */,
+				C61A9246225C8A910074D840 /* LendBookViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -495,19 +503,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8715575D225BA6E20099A789 /* LendBookModel.swift in Sources */,
+				8715575D225BA6E20099A789 /* LendBookInfoModel.swift in Sources */,
 				C6329B24224CC4A8003B903A /* MVVM.swift in Sources */,
-				87155763225BB33D0099A789 /* LendBookDataSourceViewModel.swift in Sources */,
 				C61C730D225C58B700FEF231 /* LendBookViewController.swift in Sources */,
 				8715575B225BA6730099A789 /* Publish.swift in Sources */,
 				87155768225BBD580099A789 /* PublishModel.swift in Sources */,
 				C6329AF5224CC489003B903A /* AppDelegate.swift in Sources */,
+				C61A9245225C7F160074D840 /* LendBookDataManager.swift in Sources */,
 				87155755225BA5810099A789 /* Author.swift in Sources */,
 				8715576A225BBFCE0099A789 /* LendBookView.swift in Sources */,
 				87155753225BA5590099A789 /* Book.swift in Sources */,
-				8715575F225BA8860099A789 /* LendBookDataSourceModel.swift in Sources */,
 				C6678320225637AF00E9F06D /* React.swift in Sources */,
-				87155761225BAFAA0099A789 /* LendBookViewModel.swift in Sources */,
+				C61A9247225C8A910074D840 /* LendBookViewModel.swift in Sources */,
+				87155761225BAFAA0099A789 /* LendBookInfoViewModel.swift in Sources */,
 				8715576C225BC0230099A789 /* ReuseCellAble.swift in Sources */,
 				87155766225BBD220099A789 /* AuthorModel.swift in Sources */,
 			);

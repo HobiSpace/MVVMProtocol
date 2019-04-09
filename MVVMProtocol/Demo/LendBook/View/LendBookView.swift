@@ -33,9 +33,9 @@ class LendBookView: UITableViewCell, LendBookViewProtocol, ReuseCellAble {
     var confirmButton: UIButton!
     
     // Data
-    typealias ViewModel = LendBookViewModel
+    typealias ViewModel = LendBookInfoViewModel
     
-    var viewModel: LendBookViewModel?
+    var viewModel: LendBookInfoViewModel?
     
     var nameDispose: Dispose?
     var pageCountDispose: Dispose?
@@ -104,7 +104,7 @@ class LendBookView: UITableViewCell, LendBookViewProtocol, ReuseCellAble {
         pageCountDispose = nil
     }
     
-    func bindViewModel(_ viewModel: LendBookViewModel) {
+    func bindViewModel(_ viewModel: LendBookInfoViewModel) {
         self.viewModel = viewModel
         
         nameDispose = viewModel.reactName.bindAndFire { [weak self] (value) in
