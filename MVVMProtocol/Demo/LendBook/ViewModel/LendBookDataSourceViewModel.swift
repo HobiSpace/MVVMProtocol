@@ -35,4 +35,10 @@ class LendBookDataSourceViewModel: LendBookDataSourceViewModelProtocol {
             booksVM.append(bookVM)
         }
     }
+    
+    class func loadData() -> LendBookDataSourceViewModel {
+        let dataSourceModel = LendBookDataSourceModel.init()
+        let dataSourceViewModel = LendBookDataSourceViewModel.init(model: dataSourceModel)
+        return dataSourceViewModel
+    }
 }

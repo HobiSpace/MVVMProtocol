@@ -47,7 +47,7 @@ class LendBookModel: LendBookModelProtocol {
 
 extension LendBookModel: LendBookModelInterface {
     func db_updatePageCount(_ newPageCount: Int, completion: ((Int) -> Void)) {
-        
+        completion(newPageCount)
     }
     
     func db_updateName(_ newName: String) {
