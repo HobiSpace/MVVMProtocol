@@ -20,6 +20,7 @@
 		8715576A225BBFCE0099A789 /* LendBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155769225BBFCE0099A789 /* LendBookView.swift */; };
 		8715576C225BC0230099A789 /* ReuseCellAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715576B225BC0230099A789 /* ReuseCellAble.swift */; };
 		87F0453BF67B904D40F98A64 /* Pods_MVVMProtocolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083BE75ED38AE85B07325C09 /* Pods_MVVMProtocolTests.framework */; };
+		C61C730D225C58B700FEF231 /* LendBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C730C225C58B700FEF231 /* LendBookViewController.swift */; };
 		C6329AF5224CC489003B903A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6329AF4224CC489003B903A /* AppDelegate.swift */; };
 		C6329AFA224CC489003B903A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6329AF8224CC489003B903A /* Main.storyboard */; };
 		C6329AFC224CC48A003B903A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6329AFB224CC48A003B903A /* Assets.xcassets */; };
@@ -27,13 +28,7 @@
 		C6329B0A224CC48A003B903A /* MVVMProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6329B09224CC48A003B903A /* MVVMProtocolTests.swift */; };
 		C6329B15224CC48A003B903A /* MVVMProtocolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6329B14224CC48A003B903A /* MVVMProtocolUITests.swift */; };
 		C6329B24224CC4A8003B903A /* MVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6329B23224CC4A8003B903A /* MVVM.swift */; };
-		C66783142256059000E9F06D /* HBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66783132256059000E9F06D /* HBModel.swift */; };
-		C6678316225605A300E9F06D /* HBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6678315225605A300E9F06D /* HBViewModel.swift */; };
-		C6678318225605B000E9F06D /* HBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6678317225605AF00E9F06D /* HBViewController.swift */; };
-		C667831A225605BE00E9F06D /* HBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6678319225605BE00E9F06D /* HBView.swift */; };
 		C6678320225637AF00E9F06D /* React.swift in Sources */ = {isa = PBXBuildFile; fileRef = C667831F225637AF00E9F06D /* React.swift */; };
-		C667832822586A0200E9F06D /* HBViewModelArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C667832722586A0200E9F06D /* HBViewModelArray.swift */; };
-		C667832A22586A2600E9F06D /* HBModelArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C667832922586A2600E9F06D /* HBModelArray.swift */; };
 		F251AD583EA63B0A6C9D125E /* Pods_MVVMProtocolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 159C0A4D6C2439775CC8033B /* Pods_MVVMProtocolUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +69,7 @@
 		88D5170C25B143D57D3CDB12 /* Pods_MVVMProtocol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMProtocol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EF09223D9861F08AE2D3B8 /* Pods-MVVMProtocolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMProtocolTests.release.xcconfig"; path = "Target Support Files/Pods-MVVMProtocolTests/Pods-MVVMProtocolTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF5AB29EA2DEEF5038E8BCE0 /* Pods-MVVMProtocolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMProtocolUITests.debug.xcconfig"; path = "Target Support Files/Pods-MVVMProtocolUITests/Pods-MVVMProtocolUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C61C730C225C58B700FEF231 /* LendBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendBookViewController.swift; sourceTree = "<group>"; };
 		C6329AF1224CC489003B903A /* MVVMProtocol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMProtocol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6329AF4224CC489003B903A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6329AF9224CC489003B903A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,13 +83,7 @@
 		C6329B14224CC48A003B903A /* MVVMProtocolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMProtocolUITests.swift; sourceTree = "<group>"; };
 		C6329B16224CC48A003B903A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6329B23224CC4A8003B903A /* MVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM.swift; sourceTree = "<group>"; };
-		C66783132256059000E9F06D /* HBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBModel.swift; sourceTree = "<group>"; };
-		C6678315225605A300E9F06D /* HBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBViewModel.swift; sourceTree = "<group>"; };
-		C6678317225605AF00E9F06D /* HBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBViewController.swift; sourceTree = "<group>"; };
-		C6678319225605BE00E9F06D /* HBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBView.swift; sourceTree = "<group>"; };
 		C667831F225637AF00E9F06D /* React.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = React.swift; sourceTree = "<group>"; };
-		C667832722586A0200E9F06D /* HBViewModelArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBViewModelArray.swift; sourceTree = "<group>"; };
-		C667832922586A2600E9F06D /* HBModelArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBModelArray.swift; sourceTree = "<group>"; };
 		C79ADED90860E7DC124F8E9D /* Pods-MVVMProtocolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMProtocolTests.debug.xcconfig"; path = "Target Support Files/Pods-MVVMProtocolTests/Pods-MVVMProtocolTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -261,8 +251,6 @@
 		C6678322225869B700E9F06D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C66783132256059000E9F06D /* HBModel.swift */,
-				C667832922586A2600E9F06D /* HBModelArray.swift */,
 				8715575C225BA6E20099A789 /* LendBookModel.swift */,
 				8715575E225BA8860099A789 /* LendBookDataSourceModel.swift */,
 			);
@@ -272,8 +260,6 @@
 		C6678323225869CC00E9F06D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				C6678315225605A300E9F06D /* HBViewModel.swift */,
-				C667832722586A0200E9F06D /* HBViewModelArray.swift */,
 				87155760225BAFAA0099A789 /* LendBookViewModel.swift */,
 				87155762225BB33D0099A789 /* LendBookDataSourceViewModel.swift */,
 			);
@@ -283,7 +269,7 @@
 		C6678324225869D600E9F06D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C6678317225605AF00E9F06D /* HBViewController.swift */,
+				C61C730C225C58B700FEF231 /* LendBookViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,7 +277,6 @@
 		C6678325225869DD00E9F06D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C6678319225605BE00E9F06D /* HBView.swift */,
 				87155769225BBFCE0099A789 /* LendBookView.swift */,
 			);
 			path = View;
@@ -512,18 +497,13 @@
 			files = (
 				8715575D225BA6E20099A789 /* LendBookModel.swift in Sources */,
 				C6329B24224CC4A8003B903A /* MVVM.swift in Sources */,
-				C6678318225605B000E9F06D /* HBViewController.swift in Sources */,
 				87155763225BB33D0099A789 /* LendBookDataSourceViewModel.swift in Sources */,
-				C667831A225605BE00E9F06D /* HBView.swift in Sources */,
+				C61C730D225C58B700FEF231 /* LendBookViewController.swift in Sources */,
 				8715575B225BA6730099A789 /* Publish.swift in Sources */,
-				C667832A22586A2600E9F06D /* HBModelArray.swift in Sources */,
-				C66783142256059000E9F06D /* HBModel.swift in Sources */,
-				C6678316225605A300E9F06D /* HBViewModel.swift in Sources */,
 				87155768225BBD580099A789 /* PublishModel.swift in Sources */,
 				C6329AF5224CC489003B903A /* AppDelegate.swift in Sources */,
 				87155755225BA5810099A789 /* Author.swift in Sources */,
 				8715576A225BBFCE0099A789 /* LendBookView.swift in Sources */,
-				C667832822586A0200E9F06D /* HBViewModelArray.swift in Sources */,
 				87155753225BA5590099A789 /* Book.swift in Sources */,
 				8715575F225BA8860099A789 /* LendBookDataSourceModel.swift in Sources */,
 				C6678320225637AF00E9F06D /* React.swift in Sources */,

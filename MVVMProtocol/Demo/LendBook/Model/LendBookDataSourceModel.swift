@@ -26,7 +26,7 @@ class LendBookDataSourceModel: LendBookDataSourceModelProtocol {
         // db拉取数据，转换成book
         for _ in 0...99 {
             let id = String(Int.random(in: 1...999))
-            let name = "c++primer" + String(Int.random(in: 0...1000))
+            let name = "编程之美" + String(Int.random(in: 0...1000))
             let pageCount = Int.random(in: 1...999)
             let book = LendBookModel.init(id: id, name: name, pageCount: pageCount)
             books.append(book)

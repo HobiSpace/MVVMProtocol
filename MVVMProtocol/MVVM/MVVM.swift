@@ -9,7 +9,7 @@
 import Foundation
 
 /// 定义MVVM架构中的Controller层
-protocol MVVM_ViewCtonroller: NSObjectProtocol {
+protocol MVVM_ViewController: NSObjectProtocol {
     /// 构造MVVM结构，具体看情况而定
     /// 如果可以的话在该方法完成MVVM的双向绑定
     /// 1. view -> bindViewModel
