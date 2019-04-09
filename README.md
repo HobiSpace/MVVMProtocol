@@ -7,19 +7,45 @@ MVVM模版协议
 
 ## 协议解析
 
-### MVVM_ViewCtonroller
+* **MVVM_ViewCtonroller** 
 定义Controller层，用于管理生命周期，View的代理，以及View和VM的绑定调用
-### MVVM_View
+
+* **MVVM_View**
 定义View层，用于UI展示，绑定对应的VM
 
-### MVVM_ViewModel
+* **MVVM_ViewModel**
 定义ViewModel层，业务逻辑，数据转换
-#### MVVM_ViewModel_Interface
-提供给View层或者Controller层调用的接口
-#### MVVM_ViewModel_Data_Bind
-提供给View进行绑定更新的协议
 
-### MVVM_Model
+    * MVVM_ViewModel_Interface
+    提供给View层或者Controller层调用的接口
+    * MVVM_ViewModel_Data_Bind
+    提供给View进行绑定更新的协议
+    
+* **MVVM_Model**
 定义Model层
-#### MVVM_Model_Interface
-提供给ViewModel进行调用接口
+    * MVVM_Model_Interface
+    提供给ViewModel进行调用接口
+
+## 命名规范
+
+模块名 Module
+
+前缀 Pre
+
+xxx 看具体业务
+
+* **Model层**
+
+    * Model实例(Json对应的MapperObject)
+    Pre+Module+xxx+Model
+    * DataManager(DB,网络拉取数据提供原始数据)
+    Pre+Module+xxx+DataManager
+
+* **ViewModel层**
+Pre+Module+xxx+ViewModel
+
+* **View层**
+Pre+Module+xxx+View(对应的View类型)
+
+* **Controllrer层**
+Pre+Module+xxx+Controller
