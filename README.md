@@ -49,3 +49,20 @@ Pre+Module+xxx+View(对应的View类型)
 
 * **Controllrer层**
 Pre+Module+xxx+Controller
+
+
+## 模版安装
+
+
+```
+cd 到本目录工程目录/sh
+sh install.sh
+```
+
+在新建文件下会有个Custom目录
+
+* ViewController 模版
+* MVVMViewModel 模版
+* MVVMView 模版
+
+
