@@ -1,6 +1,6 @@
 //___FILEHEADER___
 
-import UIKit
+import Foundation
 
 /// ___FILEBASENAMEASIDENTIFIER___提供给View调用的接口
 protocol ___FILEBASENAMEASIDENTIFIER___Interface: MVVM_ViewModel_Interface {
