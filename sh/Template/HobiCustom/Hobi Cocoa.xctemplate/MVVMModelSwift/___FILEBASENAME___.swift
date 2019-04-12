@@ -7,12 +7,8 @@ protocol ___FILEBASENAMEASIDENTIFIER___Interface: MVVM_Model_Interface {
     
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___Protocol: MVVM_Model {
-    // 定义该Model的字段
-}
-
-class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Protocol {
-
+class ___FILEBASENAMEASIDENTIFIER___: MVVM_Model {
+	// 定义该Model的字段
 }
 
 // MARK: - ___FILEBASENAMEASIDENTIFIER___Interface

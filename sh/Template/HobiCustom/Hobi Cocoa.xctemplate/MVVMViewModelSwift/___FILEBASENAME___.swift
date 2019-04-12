@@ -12,13 +12,8 @@ protocol ___FILEBASENAMEASIDENTIFIER___DataBind: MVVM_ViewModel_Data_Bind {
 	// 没有的话请删掉
 }
 
-/// ___FILEBASENAMEASIDENTIFIER___持有的业务属性 方法
-protocol ___FILEBASENAMEASIDENTIFIER___Protocol: MVVM_ViewModel, MVVM_ViewModel_Reformer {
+class ___FILEBASENAMEASIDENTIFIER___: MVVM_ViewModel, MVVM_ViewModel_Reformer, ___FILEBASENAMEASIDENTIFIER___DataBind {
 	// 非Model转换的ViewModel可以把MVVM_ViewModel_Reformer删掉
-}
-
-class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Protocol, ___FILEBASENAMEASIDENTIFIER___DataBind {
-
 
 }
 
