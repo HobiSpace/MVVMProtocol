@@ -61,6 +61,7 @@
 				<string>MVVMViewModel</string>
 				<string>MVVMModel</string>
 				<string>MVVMDataManager</string>
+				<string>MVVMViewController</string>
 			</array>
 			<key>Suffixes</key>
 			<dict>
@@ -84,6 +85,8 @@
 				<string>Model</string>
 				<key>MVVMDataManager</key>
 				<string>DataManager</string>
+				<key>MVVMViewController</key>
+				<string>ViewController</string>
 			</dict>
 		</dict>
 		<dict>

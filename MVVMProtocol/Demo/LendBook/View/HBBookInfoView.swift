@@ -1,24 +1,17 @@
 //
-//  LendBookView.swift
+//  HBBookInfoView.swift
 //  MVVMProtocol
 //
-//  Created by hebi on 2019/4/9.
+//  Created by hebi on 2019/4/17.
 //  Copyright © 2019 Hobi. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-protocol LendBookViewProtocol: MVVM_View {
-    var idLabel: UILabel! {get set}
-    var nameLabel: UILabel! {get set}
-    var pageCountLabel: UILabel! {get set}
-    var nameTextField: UITextField! {get set}
-    var pageCountTextField: UITextField! {get set}
-    var confirmButton: UIButton! {get set}
-}
-
-class LendBookView: UITableViewCell, LendBookViewProtocol, ReuseCellAble {
+class HBBookInfoView: UITableViewCell, MVVM_View, ReuseCellAble {
+    typealias ViewModel = HBBookInfoViewModel
+    
+    var viewModel: HBBookInfoViewModel?
     
     var idLabel: UILabel!
     
@@ -32,17 +25,26 @@ class LendBookView: UITableViewCell, LendBookViewProtocol, ReuseCellAble {
     
     var confirmButton: UIButton!
     
-    // Data
-    typealias ViewModel = LendBookInfoViewModel
-    
-    var viewModel: LendBookInfoViewModel?
-    
     var nameDispose: Dispose?
     var pageCountDispose: Dispose?
     
+    func bindViewModel(_ viewModel: HBBookInfoViewModel) {
+        self.viewModel = viewModel
+        
+        nameDispose = viewModel.reactName.bindAndFire { [weak self] (value) in
+            self?.nameLabel.text = value
+        }
+        
+        pageCountDispose = viewModel.reactPageCount.bindAndFire { [weak self] (value) in
+            self?.pageCountLabel.text = String(value)
+        }
+        
+        idLabel.text = viewModel.model.id
+    }
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-
+        
         contentView.backgroundColor = UIColor.blue
         
         nameLabel = {
@@ -103,31 +105,22 @@ class LendBookView: UITableViewCell, LendBookViewProtocol, ReuseCellAble {
         pageCountDispose?.dispose()
         pageCountDispose = nil
     }
-    
-    func bindViewModel(_ viewModel: LendBookInfoViewModel) {
-        self.viewModel = viewModel
-        
-        nameDispose = viewModel.reactName.bindAndFire { [weak self] (value) in
-            self?.nameLabel.text = value
-        }
-        
-        pageCountDispose = viewModel.reactPageCount.bindAndFire { [weak self] (value) in
-            self?.pageCountLabel.text = String(value)
-        }
-        
-        idLabel.text = viewModel.model?.id
-    }
 }
 
 // MARK: - Action
-extension LendBookView {
+extension HBBookInfoView {
     @objc func confirmAction(_ sender: UIButton) {
         if let nameText = nameTextField.text {
             viewModel?.updateName(nameText)
         }
         
         if let pageCountText = pageCountTextField.text, let pageCount = Int(pageCountText) {
-            viewModel?.updatePageCount(pageCount)
+//            viewModel?.updatePageCount(pageCount)
         }
     }
+}
+
+// MARK: - Private
+extension HBBookInfoView {
+	
 }
