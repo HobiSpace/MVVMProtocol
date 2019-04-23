@@ -16,15 +16,13 @@ MVVM模版协议
 * **MVVM_ViewModel**
 定义ViewModel层，业务逻辑，数据转换
 
-    * MVVM_ViewModel_Interface
-    提供给View层或者Controller层调用的接口
     * MVVM_ViewModel_Data_Bind
     提供给View进行绑定更新的协议
+    * MVVM_ViewModel_Reformer
+    提供ViewModel转化Model的功能
     
 * **MVVM_Model**
-定义Model层
-    * MVVM_Model_Interface
-    提供给ViewModel进行调用接口
+定义Model层，提供给ViewModel进行绑定和转化
 
 ## 命名规范
 
@@ -62,7 +60,10 @@ sh install.sh
 在新建文件下会有个Custom目录
 
 * ViewController 模版
+* MVVMViewController 模版
 * MVVMViewModel 模版
 * MVVMView 模版
+* MVVModel 模版
+
 
 
