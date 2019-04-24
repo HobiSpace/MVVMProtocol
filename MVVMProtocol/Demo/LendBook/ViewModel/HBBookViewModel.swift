@@ -8,12 +8,12 @@
 
 import Foundation
 
-/// HBBookViewModel提供给View绑定的数据回调
-protocol HBBookViewModelDataBind: MVVM_ViewModel_Data_Bind {
-    var reactBooksVM: React<[HBBookInfoViewModel]> {get set}
-}
+///// HBBookViewModel提供给View绑定的数据回调
+//protocol HBBookViewModelDataBind: MVVM_ViewModel_Data_Bind {
+//    
+//}
 
-class HBBookViewModel: MVVM_ViewModel, HBBookViewModelDataBind {
+class HBBookViewModel: MVVM_ViewModel {
     
     var booksVM: [HBBookInfoViewModel] = []
     private var bookDataManager: HBBookDataManager = HBBookDataManager.init()

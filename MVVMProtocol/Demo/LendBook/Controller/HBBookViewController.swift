@@ -38,6 +38,11 @@ class HBBookViewController: UIViewController, MVVM_ViewController {
         })
     }
     
+    func removeMVVM() {
+        booksVMDispose?.dispose()
+        booksVMDispose = nil
+    }
+    
     deinit {
         booksVMDispose?.dispose()
         booksVMDispose = nil
@@ -109,7 +114,8 @@ extension HBBookViewController: UITableViewDataSource {
         let vm = viewModel.booksVM[indexPath.row]
         cell.bindViewModel(vm)
         return cell
-    }}
+    }
+}
 
 extension HBBookViewController: UITableViewDelegate {
     

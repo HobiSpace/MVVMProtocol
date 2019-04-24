@@ -42,6 +42,13 @@ class HBBookInfoView: UITableViewCell, MVVM_View, ReuseCellAble {
         idLabel.text = viewModel.model.id
     }
     
+    func unBindViewModel() {
+        nameDispose?.dispose()
+        nameDispose = nil
+        pageCountDispose?.dispose()
+        pageCountDispose = nil
+    }
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -100,10 +107,7 @@ class HBBookInfoView: UITableViewCell, MVVM_View, ReuseCellAble {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        nameDispose?.dispose()
-        nameDispose = nil
-        pageCountDispose?.dispose()
-        pageCountDispose = nil
+        unBindViewModel()
     }
 }
 

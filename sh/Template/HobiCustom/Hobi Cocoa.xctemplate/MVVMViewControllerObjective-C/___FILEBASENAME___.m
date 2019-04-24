@@ -18,27 +18,31 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-	[super viewWillAppear:animated];
-	[self layoutUI];
+    [super viewWillAppear:animated];
+    [self layoutUI];
 }
 
 #pragma mark - MVVM
 - (void)configMVVM {
-    // 做MVVM ViewModel 和 Model数据绑定
+    // 做MVVM数据绑定
+}
+
+- (void)removeMVVM {
+    // 解除MVVM数据绑定
 }
 
 #pragma mark - UI
 - (void)setupUI {
-	// addsubview
+    // addsubview
 }
 
 - (void)layoutUI {
-	// 如果使用autolayout, 在这里布局
+    // 如果使用autolayout, 在这里布局
 }
 
 #pragma mark - Data
 - (void)setupData {
-	// 配置各种数据, 根据自己是否需要回调决定该方法有无回调参数
+    // 配置各种数据, 根据自己是否需要回调决定该方法有无回调参数
 }
 
 #pragma mark - Public Method
@@ -54,3 +58,4 @@
 #pragma mark - Setter And Getter
 
 @end
+

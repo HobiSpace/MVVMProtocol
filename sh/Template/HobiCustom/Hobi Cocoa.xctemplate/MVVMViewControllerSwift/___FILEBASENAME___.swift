@@ -3,7 +3,7 @@
 import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___: UIViewController, MVVM_ViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -11,7 +11,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController, MVVM_ViewController {
         setupData()
         // Do any additional setup after loading the view.
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         layoutUI()
@@ -19,19 +19,23 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController, MVVM_ViewController {
     
     
     func configMVVM() {
-        // 做MVVM 数据绑定 View的操作
+        // 做MVVM 数据绑定的操作
+    }
+    
+    func removeMVVM() {
+        // 解除MVVM 数据绑定操作
     }
 }
 
 // MARK: - UI
 extension ___FILEBASENAMEASIDENTIFIER___ {
     private func setupUI() {
-
+        
         // 闭包形式初始话View
-
+        
         // addsubview
     }
-
+    
     private func layoutUI() {
         // layout
     }
@@ -68,3 +72,5 @@ extension ___FILEBASENAMEASIDENTIFIER___: Protocol {
 extension ___FILEBASENAMEASIDENTIFIER___ {
     
 }
+
+

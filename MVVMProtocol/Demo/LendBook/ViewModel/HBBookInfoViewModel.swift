@@ -8,13 +8,13 @@
 
 import Foundation
 
-/// HBBookInfoViewModel提供给View绑定的数据回调
-protocol HBBookInfoViewModelDataBind: MVVM_ViewModel_Data_Bind {
-    var reactName: React<String> {get}
-    var reactPageCount: React<Int> {get}
-}
+///// HBBookInfoViewModel提供给View绑定的数据回调
+//protocol HBBookInfoViewModelDataBind: MVVM_ViewModel_Data_Bind {
+//    var reactName: React<String> {get}
+//    var reactPageCount: React<Int> {get}
+//}
 
-class HBBookInfoViewModel: MVVM_ViewModel, HBBookInfoViewModelDataBind, MVVM_ViewModel_Reformer {
+class HBBookInfoViewModel: MVVM_ViewModel, MVVM_ViewModel_Reformer {
     
     typealias Model = HBBookInfoModel
 
