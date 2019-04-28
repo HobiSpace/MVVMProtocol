@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		376CE237129D5DFBB1AD14DF /* Pods_MVVMProtocol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D5170C25B143D57D3CDB12 /* Pods_MVVMProtocol.framework */; };
-		87155753225BA5590099A789 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155752225BA5590099A789 /* Book.swift */; };
-		87155755225BA5810099A789 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155754225BA5810099A789 /* Author.swift */; };
-		8715575B225BA6730099A789 /* Publish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715575A225BA6730099A789 /* Publish.swift */; };
 		87155766225BBD220099A789 /* AuthorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155765225BBD220099A789 /* AuthorModel.swift */; };
 		87155768225BBD580099A789 /* PublishModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87155767225BBD580099A789 /* PublishModel.swift */; };
 		8715576C225BC0230099A789 /* ReuseCellAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715576B225BC0230099A789 /* ReuseCellAble.swift */; };
@@ -54,9 +51,6 @@
 		159C0A4D6C2439775CC8033B /* Pods_MVVMProtocolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMProtocolUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		174F5EF7C6629CC735BBB1A2 /* Pods-MVVMProtocolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMProtocolUITests.release.xcconfig"; path = "Target Support Files/Pods-MVVMProtocolUITests/Pods-MVVMProtocolUITests.release.xcconfig"; sourceTree = "<group>"; };
 		21E2BC96DB2CFD733B977D63 /* Pods-MVVMProtocol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMProtocol.debug.xcconfig"; path = "Target Support Files/Pods-MVVMProtocol/Pods-MVVMProtocol.debug.xcconfig"; sourceTree = "<group>"; };
-		87155752225BA5590099A789 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
-		87155754225BA5810099A789 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
-		8715575A225BA6730099A789 /* Publish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publish.swift; sourceTree = "<group>"; };
 		87155765225BBD220099A789 /* AuthorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorModel.swift; sourceTree = "<group>"; };
 		87155767225BBD580099A789 /* PublishModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishModel.swift; sourceTree = "<group>"; };
 		8715576B225BC0230099A789 /* ReuseCellAble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseCellAble.swift; sourceTree = "<group>"; };
@@ -132,9 +126,6 @@
 		87155751225BA5490099A789 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				87155752225BA5590099A789 /* Book.swift */,
-				87155754225BA5810099A789 /* Author.swift */,
-				8715575A225BA6730099A789 /* Publish.swift */,
 				8715576B225BC0230099A789 /* ReuseCellAble.swift */,
 			);
 			path = Protocol;
@@ -212,6 +203,7 @@
 				C66783122256058000E9F06D /* Demo */,
 				C6329B22224CC491003B903A /* MVVM */,
 				C6329AF4224CC489003B903A /* AppDelegate.swift */,
+				8715577F226644C70099A789 /* MVVMProtocol-Bridging-Header.h */,
 				C6329AF8224CC489003B903A /* Main.storyboard */,
 				C6329AFB224CC48A003B903A /* Assets.xcassets */,
 				C6329AFD224CC48A003B903A /* LaunchScreen.storyboard */,
@@ -279,7 +271,6 @@
 			isa = PBXGroup;
 			children = (
 				8715577922663C990099A789 /* HBBookViewController.swift */,
-				8715577F226644C70099A789 /* MVVMProtocol-Bridging-Header.h */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -509,13 +500,10 @@
 			files = (
 				C6329B24224CC4A8003B903A /* MVVM.swift in Sources */,
 				87155776226639A40099A789 /* HBBookInfoViewModel.swift in Sources */,
-				8715575B225BA6730099A789 /* Publish.swift in Sources */,
 				87155768225BBD580099A789 /* PublishModel.swift in Sources */,
 				C6329AF5224CC489003B903A /* AppDelegate.swift in Sources */,
 				87155774226638DE0099A789 /* HBBookInfoModel.swift in Sources */,
-				87155755225BA5810099A789 /* Author.swift in Sources */,
 				8715577A22663C990099A789 /* HBBookViewController.swift in Sources */,
-				87155753225BA5590099A789 /* Book.swift in Sources */,
 				8715577C22663D100099A789 /* HBBookViewModel.swift in Sources */,
 				8715577E226640610099A789 /* HBBookInfoView.swift in Sources */,
 				C6678320225637AF00E9F06D /* React.swift in Sources */,
@@ -706,7 +694,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hobi.MVVMProtocol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "MVVMProtocol/Demo/LendBook/Controller/MVVMProtocol-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "MVVMProtocol/MVVMProtocol-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -727,7 +715,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hobi.MVVMProtocol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "MVVMProtocol/Demo/LendBook/Controller/MVVMProtocol-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "MVVMProtocol/MVVMProtocol-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

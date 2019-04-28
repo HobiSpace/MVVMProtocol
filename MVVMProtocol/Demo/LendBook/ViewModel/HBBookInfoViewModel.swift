@@ -8,26 +8,22 @@
 
 import Foundation
 
-///// HBBookInfoViewModel提供给View绑定的数据回调
-//protocol HBBookInfoViewModelDataBind: MVVM_ViewModel_Data_Bind {
-//    var reactName: React<String> {get}
-//    var reactPageCount: React<Int> {get}
-//}
-
 class HBBookInfoViewModel: MVVM_ViewModel, MVVM_ViewModel_Reformer {
     
     typealias Model = HBBookInfoModel
 
     var model: HBBookInfoModel
-    
+    // react形式
     var reactName: React<String>
     
-    var reactPageCount: React<Int>
+    // block形式
+    var pageCountStr: String
+    var pageCountDidChange:((String) -> Void)?
     
     required init(with model: HBBookInfoModel) {
         self.model = model
         reactName = React<String>.init(model.name)
-        reactPageCount = React<Int>.init(model.pageCount)
+        pageCountStr = String(model.pageCount)
     }
     
 }
@@ -38,6 +34,12 @@ extension HBBookInfoViewModel {
         model.db_updateName(newName) { [weak self] in
             self?.reactName.update(newName)
         }
+    }
+    
+    func updatePageCount(_ newPageCount: Int) {
+        model.db_updatePageCount(newPageCount)
+        self.pageCountStr = String(newPageCount)
+        self.pageCountDidChange?(self.pageCountStr)
     }
 }
 

@@ -26,7 +26,6 @@ class HBBookInfoView: UITableViewCell, MVVM_View, ReuseCellAble {
     var confirmButton: UIButton!
     
     var nameDispose: Dispose?
-    var pageCountDispose: Dispose?
     
     func bindViewModel(_ viewModel: HBBookInfoViewModel) {
         self.viewModel = viewModel
@@ -35,8 +34,9 @@ class HBBookInfoView: UITableViewCell, MVVM_View, ReuseCellAble {
             self?.nameLabel.text = value
         }
         
-        pageCountDispose = viewModel.reactPageCount.bindAndFire { [weak self] (value) in
-            self?.pageCountLabel.text = String(value)
+        self.pageCountLabel.text = viewModel.pageCountStr
+        viewModel.pageCountDidChange = { [weak self] (value) in
+            self?.pageCountLabel.text = value
         }
         
         idLabel.text = viewModel.model.id
@@ -45,8 +45,7 @@ class HBBookInfoView: UITableViewCell, MVVM_View, ReuseCellAble {
     func unBindViewModel() {
         nameDispose?.dispose()
         nameDispose = nil
-        pageCountDispose?.dispose()
-        pageCountDispose = nil
+        viewModel?.pageCountDidChange = nil
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -119,7 +118,7 @@ extension HBBookInfoView {
         }
         
         if let pageCountText = pageCountTextField.text, let pageCount = Int(pageCountText) {
-//            viewModel?.updatePageCount(pageCount)
+            viewModel?.updatePageCount(pageCount)
         }
     }
 }

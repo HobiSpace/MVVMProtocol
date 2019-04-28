@@ -8,8 +8,7 @@
 
 import Foundation
 
-class HBBookDataManager: MVVM_Model, Books {
-    
+class HBBookDataManager: MVVM_Model {
     
     typealias BookType = HBBookInfoModel
     

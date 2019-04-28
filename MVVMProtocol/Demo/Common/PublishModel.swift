@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PublishModel: Publish {
+class PublishModel {
     var name: String
     
     init(name: String) {

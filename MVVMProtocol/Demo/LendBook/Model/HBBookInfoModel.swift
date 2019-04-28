@@ -8,11 +8,7 @@
 
 import Foundation
 
-class HBBookInfoModel: MVVM_Model, Book {
- 
-    typealias AuthorType = AuthorModel
-    
-    typealias PublishType = PublishModel
+class HBBookInfoModel: MVVM_Model {
     
     var id: String
     
@@ -38,6 +34,10 @@ extension HBBookInfoModel {
     func db_updateName(_ newName: String, completion: (() -> Void)) {
         self.name = newName
         completion()
+    }
+    
+    func db_updatePageCount(_ newPageCount: Int) {
+        self.pageCount = newPageCount
     }
 }
 

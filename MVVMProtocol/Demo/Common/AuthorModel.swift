@@ -8,7 +8,7 @@
 
 import Foundation
 
-class AuthorModel: Author {
+class AuthorModel {
     
     var name: String
     
