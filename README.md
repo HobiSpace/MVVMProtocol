@@ -5,6 +5,13 @@ MVVM模版协议
 ## MVVM
 ![Image text](https://github.com/HobiSpace/MVVMProtocol/blob/master/ReadMeResources/MVVMArc.png)
 
+```
+                                User Action                  Interface
+ MVVM_View/MVVM_ViewController  <-------->  MVVM_ViewModel  <-------->  MVVM_Model
+                              Binding/Callback            Binding/Callback
+
+```
+
 ## 协议解析
 
 * **MVVM_ViewCtonroller** 
@@ -14,10 +21,8 @@ MVVM模版协议
 定义View层，用于UI展示，绑定对应的VM
 
 * **MVVM_ViewModel**
-定义ViewModel层，业务逻辑，数据转换
+定义ViewModel层，业务逻辑，数据转换，数据更新回调
 
-    * MVVM_ViewModel_Data_Bind
-    提供给View进行绑定更新的协议
     * MVVM_ViewModel_Reformer
     提供ViewModel转化Model的功能
     
